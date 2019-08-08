@@ -1,0 +1,7 @@
+.colorBox {
+  width: 20%;
+  height: 25%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
