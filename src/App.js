@@ -8,7 +8,7 @@ class App extends Component {
     console.log(generatePalette(colorSeeds[4])); 
     return(
       <div>
-        <Palette {...colorSeeds[4]}/>
+        <Palette palette={generatePalette(colorSeeds[4])}/>
       </div>
     );
   }
