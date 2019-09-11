@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import {Router, Switch} from 'react-router-dom'
 import colorSeeds from './seedColors'; 
 import { generatePalette } from './colorHelper'; 
 import Palette from './Palette'; 
