@@ -4,7 +4,6 @@ import chroma from 'chroma-js';
 import { withStyles } from '@material-ui/styles';  
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import './colorBox.css'; 
-import {Opacity} from '@material-ui/icons'
 
 const styles = {
   colorBox: {
