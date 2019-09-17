@@ -1,3 +1,5 @@
+import { white } from "ansi-colors";
+
 export default {
   root: {
     backgroundColor: "blue",
@@ -17,11 +19,13 @@ export default {
     display: 'flex',
     width: "100%",
     justifyContent: "space-between",
+    alignItems: "center",
     fontSize: ".8rem",
     color: "white",
-    // "& h1": {
-    //   margin: "5px 0"
-    // }
+    "& a": {
+      color: "white",
+    }
+    
   },
   paletters: {
     boxSizing: "border-box",
