@@ -61,7 +61,6 @@ export default {
     padding: "10px",
     left: "0",
     bottom: "0",
-    padding: "10px",
     letterSpacing: "1px",
     color: "black",
     textTransform: "uppercase",

@@ -1,5 +1,3 @@
-import { white } from "ansi-colors";
-
 export default {
   root: {
     backgroundColor: "blue",
