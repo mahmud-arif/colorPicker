@@ -6,15 +6,17 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button'
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import {ChromePicker} from 'react-color'; 
 
 
 
 
-const drawerWidth = 240;
+const drawerWidth = 350;
 
 const styles = theme => ({
   root: {
@@ -129,7 +131,17 @@ export class NewPaletteForm extends Component {
               <ChevronLeftIcon /> 
             </IconButton>
           </div>
-        <Divider />
+          <Divider />
+          <Typography variant="h4">Design your Palette</Typography>
+          <div>
+            <Button variant="contained" color="secondary">Clear Palette</Button>
+            <Button variant="contained" color="primary">Random Color</Button>
+          </div>
+          <ChromePicker
+            color='purple'
+            onChangeComplete={newColor=>alert(newColor.hex)}
+          />
+          <Button variant="contained" color="primary">Add color</Button>
         </Drawer>
         <main
           className={classNames(classes.content, {
